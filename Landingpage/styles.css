@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Roboto:wght@300&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: url("https://landing.zytheme.com/siena/assets/images/background/bg-1.png");
+    /*background-position: 0;*/
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 10px 90px;
+    margin: 2em;
+    /*padding-bottom: 140px*/
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #6262a0;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav a:hover {
+    color: #664ffa;
+}
+
+.flex-container {
+    display: flex;
+    /*padding: 260px 15px 15px 5px;*/
+    padding: 100px 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 140px;
+}
+
+.flex-div1 {
+    display: flex;
+    flex: 70;
+    display: block;
+}
+
+h1 {
+    color: #6262a0;
+    font-size: 2.7em;
+    font-weight: 700;
+}
+
+p {
+    color: #ababc7;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 10px 70px;
+    /*padding: 50px 60px;*/
+    -webkit-box-shadow: 2px 4px 18px 1px rgba(122, 118, 122, 1);
+    -moz-box-shadow: 2px 4px 18px 1px rgba(122, 118, 122, 1);
+    /*box-shadow: 2px 4px 18px 1px rgba(122, 118, 122, 1);*/
+    box-shadow: 0 10px 40px 0 rgba(32, 62, 84, 0.08);
+    border-radius: 5px;
+    /*border: 4px solid slateblue;*/
+    flex: 50;
+    flex-wrap: wrap;
+    margin: 1em;
+    margin-left: 140px;
+}
+
+.form-container h3 {
+    color: #6262a0;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 40px;
+}
+
+.field-input {
+    margin-bottom: 9px;
+    /*padding-left: 1em;
+    padding-right: 1em;*/
+    margin: 0px 0px 20px;
+}
+
+.field-input input {
+    width: 100%;
+    background-color: #f7f6ff;
+    /*background-color: #a0a0ba;*/
+    color: #222;
+    /*border: 1px solid #ced4da;*/
+    border: 1px solid #e6e6f0;
+    border-radius: 5px;
+    font-size: 0.9em;
+    outline: none;
+    /*si me paro sobre el input le pongo un color o un subrayado*/
+    /*padding: 6px 6px 20px 30px;*/
+    padding: 4.8px 9.7px 4.8px 30px;
+    height: 42px;
+}
+
+.field-input label {
+    color: #664ffa;
+    font-size: 0.95em;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #664ffa;
+    border-radius: 6px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn-primary:hover {
+    background-color: #3b1df9;
+}
+
+.texto1 {
+    text-align: center;
+    color: #6262a0;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.flex-container2 {
+    display: flex;
+    color: #6262a0;
+    text-align: center;
+}
+
+.flex-container2 p {
+    margin-left: 15%;
+    font-size: 1.1em;
+}
