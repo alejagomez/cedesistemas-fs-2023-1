@@ -5,6 +5,8 @@ import { LazyLoading } from '../Components/LazyLoading';
 const Home = React.lazy(() => import('../Pages/Home'));
 const WearDetail = React.lazy(() => import('../Pages/WearDetail'));
 const Profile = React.lazy(() => import('../Pages/Profile'));
+const AddClothing = React.lazy(() => import('../Pages/AddClothing'));
+const MyClothes = React.lazy(() => import('../Pages/MyClothes'));
 const Login = React.lazy(() => import('../Pages/Login'));
 const Signup = React.lazy(() => import('../Pages/Signup'));
 
@@ -49,6 +51,22 @@ export const router = createBrowserRouter([ //en esta función defino la raiz "p
     element: (
       <Suspense fallback={<LazyLoading />}>
         <Profile />
+      </Suspense>
+    )
+  },
+  {
+    path: "/add-clothing",
+    element: (
+      <Suspense fallback={<LazyLoading />}>
+        <AddClothing />
+      </Suspense>
+    )
+  },
+  {
+    path: "/my-clothes",
+    element: (
+      <Suspense fallback={<LazyLoading />}>
+        <MyClothes />
       </Suspense>
     )
   }

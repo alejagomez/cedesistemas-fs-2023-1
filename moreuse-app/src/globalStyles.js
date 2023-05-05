@@ -44,7 +44,7 @@ label{
   display: block;
   text-align: center;
 }
-input{
+input, textarea, select{
   width: 100%;
   font-family:'Montserrat';
   font-size: 1.1em;
@@ -53,6 +53,10 @@ input{
   text-align: center;
   border-radius: 4px;
 }
+
+textarea {
+    text-align: left !important;
+  }
 
   span{
   color:red;
