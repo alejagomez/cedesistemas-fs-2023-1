@@ -4,7 +4,7 @@ const { USER_PASS_WRONG, SERVER_ERROR } = require('./utils/dict.errors');
 
 const login = (email, password) => {
   try {
-    const div = a / 1;
+    //const div = a / 1;
     if (email === "juanito@gmail.com" && password === "123") {
       return {
         token: 'xxxxyyyyzzz'
@@ -12,7 +12,7 @@ const login = (email, password) => {
     }
     throw errorHandler(USER_PASS_WRONG);
   } catch (error) {
-    throw error.handled ? error : errorHandler(SERVER_ERROR, { error: JSON.stringify(error) });
+    throw error.handled ? error : errorHandler(SERVER_ERROR);
   }
 }
 
